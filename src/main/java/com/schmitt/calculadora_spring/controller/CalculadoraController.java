@@ -26,4 +26,9 @@ public class CalculadoraController {
         return calculadora.subtracao(valores);
     }
 
+    @RequestMapping("/multiplicacao")
+    public CalculoResponseDto multiplicacao(@RequestBody ValoresRequestDto valores) {
+        return calculadora.multiplicacao(valores);
+    }
+
 }
