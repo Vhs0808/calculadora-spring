@@ -11,4 +11,8 @@ public class CalculadoraService {
     public CalculoResponseDto soma(ValoresRequestDto valores){
         return new CalculoResponseDto(valores.getValor1() + valores.getValor2());
     }
+
+    public CalculoResponseDto subtracao(ValoresRequestDto valores){
+        return new CalculoResponseDto(valores.getValor1() - valores.getValor2());
+    }
 }
