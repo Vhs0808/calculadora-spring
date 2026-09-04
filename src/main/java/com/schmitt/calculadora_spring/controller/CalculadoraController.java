@@ -36,9 +36,6 @@ public class CalculadoraController {
 
     @RequestMapping("/divisao")
     public CalculoResponseDto divisao(@RequestBody ValoresRequestDto valores) {
-        if (valores.getValor2() == 0) {
-            throw new DivisaoPorZeroException("Não é possível dividir por zero.");
-        }
         return calculadora.divisao(valores);
     }
 
