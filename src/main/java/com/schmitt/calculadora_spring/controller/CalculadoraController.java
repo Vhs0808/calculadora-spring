@@ -15,7 +15,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @RequestMapping("/calculadora")
 public class CalculadoraController {
-    
+
     private final CalculadoraService calculadora;
     private final ResponseDto response;
 
