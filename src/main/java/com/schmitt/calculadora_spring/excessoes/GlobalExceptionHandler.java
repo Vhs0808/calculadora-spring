@@ -1,7 +1,6 @@
-package com.schmitt.calculadora_spring.controller;
+package com.schmitt.calculadora_spring.excessoes;
 
 import com.schmitt.calculadora_spring.dto.ResponseDto;
-import com.schmitt.calculadora_spring.excessoes.DivisaoPorZeroException;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.RestControllerAdvice;
