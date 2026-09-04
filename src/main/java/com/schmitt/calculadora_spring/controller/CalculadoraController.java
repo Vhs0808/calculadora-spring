@@ -4,20 +4,22 @@ import com.schmitt.calculadora_spring.dto.CalculoResponseDto;
 import com.schmitt.calculadora_spring.dto.ResponseDto;
 import com.schmitt.calculadora_spring.dto.ValoresRequestDto;
 import com.schmitt.calculadora_spring.service.CalculadoraService;
+import lombok.AllArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+@AllArgsConstructor
 @RestController
 @RequestMapping("/calculadora")
 public class CalculadoraController {
 
     @Autowired
-    CalculadoraService calculadora;
+    private final CalculadoraService calculadora;
     @Autowired
-    ResponseDto response;
+    private final ResponseDto response;
 
     @PostMapping("/soma")
     public CalculoResponseDto soma(@RequestBody ValoresRequestDto valores){
