@@ -19,4 +19,8 @@ public class CalculadoraService {
     public CalculoResponseDto multiplicacao(ValoresRequestDto valores) {
         return new CalculoResponseDto(valores.getValor1() * valores.getValor2());
     }
+
+    public CalculoResponseDto divisao(ValoresRequestDto valores) {
+        return new CalculoResponseDto(valores.getValor1() / valores.getValor2());
+    }
 }
